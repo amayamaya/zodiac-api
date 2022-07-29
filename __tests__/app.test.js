@@ -145,10 +145,26 @@ describe('signs routes', () => {
 
   it('/signs should return a list of signs', async () => {
     const res = await request(app).get('/signs');
-    console.log(res.body);
+    // console.log(res.body);
     const expected = signs;
-    console.log(expected);
+    // console.log(expected);
     expect(res.body).toEqual(expected);
+  });
+
+  it('/signs/:id should return a single sign', async () => {
+    const res = await request(app).get('/signs/2');
+    const taurus = {
+      id: '2',
+      name: 'Taurus',
+      svg_symbol: 'https://en.wikipedia.org/wiki/File:Taurus.svg',
+      unicode_symbol: '♉',
+      archetype: 'The Bull',
+      element: 'Earth',
+      ruling_body_classic: 'Venus',
+      ruling_body_modern: 'Earth',
+      keywords: ['stable', 'practical', 'patient'],
+    };
+    expect(res.body).toEqual(taurus);
   });
 
   afterAll(() => {
