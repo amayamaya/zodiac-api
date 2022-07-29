@@ -7,14 +7,14 @@ CREATE table signs (
     name VARCHAR NOT NULL,
     svg_symbol VARCHAR NOT NULL,
     unicode_symbol VARCHAR NOT NULL,
-    gloss VARCHAR NOT NULL,
+    archetype VARCHAR NOT NULL,
     element VARCHAR NOT NULL,
     ruling_body_classic VARCHAR NOT NULL,
     ruling_body_modern VARCHAR NOT NULL,
     keywords VARCHAR []
 );
 
-INSERT INTO signs (name, svg_symbol, unicode_symbol, gloss, element, ruling_body_classic, ruling_body_modern, keywords) VALUES
+INSERT INTO signs (name, svg_symbol, unicode_symbol, archetype, element, ruling_body_classic, ruling_body_modern, keywords) VALUES
 ('Aies', 'https://en.wikipedia.org/wiki/File:Aries.svg', '♈︎', 'The Ram', 'Fire', 'Mars', 'Mars', ARRAY ['driven', 'idealistic', 'aggressive']),
 ('Taurus', 'https://en.wikipedia.org/wiki/File:Taurus.svg', '♉︎', 'The Bull', 'Earth', 'Venus', 'Venus', ARRAY ['stable', 'practical', 'patient']),
 ('Gemini', 'https://en.wikipedia.org/wiki/File:Gemini.svg', '♊︎', 'The Twins', 'Air', 'Mercury', 'Mercury', ARRAY ['communicative', 'curious', 'adaptable']),
