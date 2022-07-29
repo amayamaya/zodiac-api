@@ -138,13 +138,19 @@ const signs = [
   },
 ];
 
-describe('backend-express-template routes', () => {
+describe('signs routes', () => {
   beforeEach(() => {
     return setup(pool);
   });
-  it('example test - delete me!', () => {
-    expect(1).toEqual(1);
+
+  it('/signs should return a list of signs', async () => {
+    const res = await request(app).get('/signs');
+    console.log(res.body);
+    const expected = signs;
+    console.log(expected);
+    expect(res.body).toEqual(expected);
   });
+
   afterAll(() => {
     pool.end();
   });
