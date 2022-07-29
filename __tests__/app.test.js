@@ -13,7 +13,7 @@ const signs = [
     element: 'Fire',
     ruling_body_classic: 'Mars',
     ruling_body_modern: 'Mars',
-    keywords: ['driven', 'idealistic', 'aggressive'],
+    keywords: ['driven', 'idealistic', 'forward'],
   },
   {
     id: '2',
@@ -24,7 +24,7 @@ const signs = [
     element: 'Earth',
     ruling_body_classic: 'Venus',
     ruling_body_modern: 'Earth',
-    keywords: ['resolute', 'sensual', 'indulgent'],
+    keywords: ['stable', 'practical', 'patient'],
   },
   {
     id: '3',
@@ -35,7 +35,7 @@ const signs = [
     element: 'Air',
     ruling_body_classic: 'Mercury',
     ruling_body_modern: 'Mercury',
-    keywords: ['playful', 'curious', 'two-faced'],
+    keywords: ['communicative', 'curious', 'adaptable'],
   },
   {
     id: '4',
@@ -46,7 +46,7 @@ const signs = [
     element: 'Water',
     ruling_body_classic: 'Moon',
     ruling_body_modern: 'Moon',
-    keywords: ['nurturing', 'snobby', 'petty'],
+    keywords: ['emotional', 'intuitive', 'protective'],
   },
   {
     id: '5',
@@ -57,7 +57,7 @@ const signs = [
     element: 'Fire',
     ruling_body_classic: 'Sun',
     ruling_body_modern: 'Sun',
-    keywords: ['fierce', 'opulent', 'narcissistic'],
+    keywords: ['creative', 'generous', 'passionate'],
   },
   {
     id: '6',
@@ -68,7 +68,7 @@ const signs = [
     element: 'Earth',
     ruling_body_classic: 'Mercury',
     ruling_body_modern: 'Ceres',
-    keywords: ['meticulous', 'helpful', 'naive'],
+    keywords: ['analytical', 'practical', 'helpful'],
   },
   {
     id: '7',
@@ -79,7 +79,7 @@ const signs = [
     element: 'Air',
     ruling_body_classic: 'Venus',
     ruling_body_modern: 'Venus',
-    keywords: ['balanced', 'chatty', 'indecisive'],
+    keywords: ['diplomatic', 'cooperative', 'fair-minded'],
   },
   {
     id: '8',
@@ -108,7 +108,7 @@ const signs = [
     name: 'Capricorn',
     svg_symbol: 'https://en.wikipedia.org/wiki/File:Capricorn.svg',
     unicode_symbol: '♑',
-    archetype: 'The Mountain Sea-goat',
+    archetype: 'The Goat',
     element: 'Earth',
     ruling_body_classic: 'Saturn',
     ruling_body_modern: 'Saturn',
@@ -119,7 +119,7 @@ const signs = [
     name: 'Aquarius',
     svg_symbol: 'https://en.wikipedia.org/wiki/File:Aquarius.svg',
     unicode_symbol: '♒',
-    archetype: 'The Water-bearer',
+    archetype: 'The Water Bearer',
     element: 'Air',
     ruling_body_classic: 'Saturn',
     ruling_body_modern: 'Uranus',
